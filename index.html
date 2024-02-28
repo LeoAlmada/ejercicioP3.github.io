@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Eventos</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="estilo.css">
+  <style>
+    body {
+      height: 200vh; 
+    }
+    .btn-scroll {
+      margin-top: 30px;
+      margin-bottom: 20px;
+    }
+  </style>
+</head>
+<body id="pagina">
+  <div class="container">
+    <div class="evento-container">
+        <h5>onclick(1 click)</h5>
+        <button class="btn btn-success" onclick="Escondertxt()">Esconder parrafo</button>
+        <h5>ondblclick (2 clicks)</h5>
+        <button class="btn btn-success" ondblclick="Mostrartxt()">Mostrar parrafo</button>
+        <h5>onmouseover (Pasar sobre el boton)</h5>
+        <button class="btn btn-success" onmouseover="Cambiarcolor()">Cambiar color parrafo</button>
+        <h5>onmouseup (Soltar dentro del boton)</h5>
+        <button class="btn btn-success" onmouseup="Regresarcolor()">Regresar color parrafo</button>
+        <h5>onmousemove (Esta dentro del area del boton)</h5>
+        <button class="btn btn-success" onmousemove="aumentartext()">Cambiar tamaño del parrafo</button>
+        
+        <br>
+        <button class="btn-scroll" onclick="Scrolldown()">Bajar</button>
+
+      </div>
+    
+    <p id="textofuncional">"The Marvels" es una película que deslumbra con su espectacularidad cinematográfica y su profundo desarrollo de personajes. Con una trama que entrelaza múltiples épocas y generaciones, la película nos sumerge en un universo lleno de sorpresas y emociones. Desde los deslumbrantes efectos visuales hasta las actuaciones cautivadoras, cada elemento de la película se combina para ofrecer una experiencia cinematográfica inolvidable. Con un equilibrio perfecto entre la acción trepidante y los momentos emotivos, "The Marvels" es una obra maestra que deja al público ansioso por más. 
+        Recomendaría "The Marvels" por su capacidad para sumergir al espectador en un universo cinematográfico lleno de sorpresas y emociones. Esta película no solo ofrece una trama intrigante que entrelaza múltiples épocas y generaciones, sino que también presenta un espectáculo visual impresionante gracias a sus efectos especiales y escenas de acción bien coreografiadas. Además, la profundidad en el desarrollo de los personajes permite que el público se conecte emocionalmente con ellos, lo que añade una capa adicional de disfrute a la experiencia. En resumen, "The Marvels" es una obra maestra que combina a la perfección la acción, la emoción y la espectacularidad, convirtiéndola en una película que vale la pena ver. </p>
+
+
+    
+
+    <div class="evento-container">
+      <h5>onwheel (Girar la rueda del raton dentro del boton)</h5>
+      <button class="btn-scroll" onwheel="scrollUp()">Inicio</button>
+      <br>
+      <button class="btn btn-esconder" onclick="Esconderbtn()">Ocultar botones</button>
+    </div>
+     
+  
+
+  </div>
+
+  <script src="script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+
+.btn-scroll {
+    background-color: #000000;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  .btn-scroll:hover {
+    background-color: #3e3d3d;
+  }
+ 
+
+.btn-esconder {
+    background-color: #000000;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  .btn-esconder:hover {
+    background-color: #3e3d3d;
+  }
+  
